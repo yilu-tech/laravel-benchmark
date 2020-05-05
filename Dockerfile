@@ -2,4 +2,4 @@ FROM yilutech/phpfpm
 
 COPY . /apps/
 
-RUN composer install
+RUN cd /apps && composer install
