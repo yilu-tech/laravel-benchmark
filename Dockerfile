@@ -2,4 +2,5 @@ FROM yilutech/phpfpm
 
 COPY . /apps/
 
-RUN cd /apps && composer install
+RUN apk update && apk add nginx \
+ && cd /apps && composer install
